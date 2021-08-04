@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daichi Toku - WebSite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script src="swiper.js" defer></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <h2>Daichi Toku</h2>
+        </div>
+        <div class="burger-btn">
+          <span class="bar bar_top"></span>
+          <span class="bar bar_mid"></span>
+          <span class="bar bar_bottom"></span>
+        </div>
+        <div class="header-right">
+          <a name="#Contact">Contact</a>
+        </div>
+        <div class="header-right">
+          <a name="#FAQ">FAQ</a>
+        </div>
+        <div class="header-right">
+          <a name="#Products">Products</a>
+        </div>
+        <div class="header-right">
+          <a name="#About">About</a>
+        </div>
+      </div>
+    </header>
+    <div class="menu">
+      <div class="menu__item" name = "#About" >About</div>
+      <div class="menu__item" name = "#Products">Products</div>
+      <div class="menu__item" name = "#FAQ">FAQ</div>
+      <div class="menu__item" name = "#Contact">Contact</div>
+    </div>
+    <!-- Slider main container -->
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class = "image-wrap">
+          <img src="img/computer.jpg" alt="computer">
+        </div>
+        <div class = "slide-contents">
+          <h2 class = "title">Game and software developer</h2>
+          <a class="btn learn-more">learn more!!</a>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class = "image-wrap">
+          <img src="img/tennis.jpg" alt="tennis">
+        </div>
+        <div class = "slide-contents-right">
+          <h2 class = "title">Tennis player</h2>
+          <p class = detail>I started playing tennis when I was just 4 years old in kindergarten, and I still love to do it.</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class = "image-wrap">
+          <img src="img/desktop.jpg" alt="desktop">
+        </div>
+        <div class = "slide-contents">
+          <h2 class  = "title">Student</h2>
+          <p class = "detail">I'm a student and living in Argentina for my father's job. I'm currently going to an international school!</p>
+        </div>
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  <div id = "About" class = "about">
+    <div class = "container">
+      <div class = "heading fade-in">
+        <h2>About</h2>
+      </div> 
+      <img src="img/about.jpg" alt="about" class = "fade-in">
+      <div class = "about-text fade-in">
+        <h1>Hi I'm Daichi</h1>
+        <p>from Japan. I was interested in game development a while ago, and recently I'm studying languages for web development. From now on, I’d like to make games with unity, develop web applications and make more stuff like that.</p>
+      </div>
+      <div class = "clear"></div>
+    </div>
+  </div>
+  <div id = "Products" class = "products">
+    <div class = container>
+      <div class = "heading fade-in">
+        <h2>Products</h2>
+      </div>
+      <div class = "card fade-in">
+        <div class = "image-cut">
+          <img src="img/avoid.png" alt="Avoid!-game">
+        </div>
+        <div class = "explanation">
+          <h3>Avoid!(WebGL game)</h3>
+          <p>This is the game what I made for WebGL in unity!! And it's the first game I made all by myself. AVOID the obstacles and get as high score as possible.</p>
+          <a href="https://nomedt.github.io/Avoid/" class="btn check-out">Play now!!</a>
+        </div>
+      </div>
+      <div class = "card fade-in">
+        <div class = "image-cut">
+          <img src="img/todo-list.png" alt="todo-list">
+        </div>
+        <div class = "explanation">
+          <h3>My To-Do List(Web application)</h3>
+          <p>I made this To-do List application by watching Youtube videos which released by Kevin Powell and Kyle!! I also added some functions and changed a little bit to make it better</p>
+          <a href="https://nomedt.github.io/My-To-Do-List/" class="btn check-out">Check this out!!</a>
+        </div>
+      </div>
+      <div class = "card fade-in">
+        <div class = "image-cut">
+          <img src="img/scraping.png" alt="scraping">
+        </div>
+        <div class = "explanation">
+          <h3>Scraping</h3>
+          <p>Scraping is the process of bringing information from a website and listing it. I put the results in a Google spreadsheet!! ( Python project )</p>
+          <a id = "image-btn" class="btn check-out">See spreadsheet!!</a>
+        </div>
+      </div>
+      <div class = "clear"></div>
+    </div>
+  </div>
+  <div class = "enlarge-container">
+    <img src="img/scraping.png" alt="scraping" class = "enlarge-png">
+  </div>
+  <div id = "FAQ" class = "faq-wrapper">
+    <div class = "container">
+      <div class = "heading fade-in">
+        <h2>FAQ</h2>
+      </div>
+      <div clss = "faq">
+        <ul id = "faq-list">
+          <li class="faq-list-item fade-in">
+            <h3 class = "question">Where are you from?</h3>  
+            <span>+</span>
+            <div class = "answer">
+              <p>I'm from Tokyo, Japan but I'm living in Argentina for my father's job now</p>
+            </div>
+          </li>
+          <li class="faq-list-item fade-in">
+            <h3 class = "question">Why did you start learning programming languages?</h3>  
+            <span>+</span>
+            <div class = "answer">
+              <p>A year ago, I was making games in unity what I interested in. And recently I decided to learn about web development as next challenge!!</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id = "Contact" class = "contact">
+    <div class = "container">
+      <div class = "heading fade-in">
+        <h2>Contact form</h2>
+      </div>
+      <div class="contact-form fade-in">
+        <h4>Send message from here</h4>
+        <form>
+          <div id ="error-message"></div>
+          <input type="text" name="name" placeholder="your name" class="contact-name">
+          <div id ="error-message1"></div>
+          <input type="text" name="email" placeholder="email address" class="contact-email">
+          <div id ="error-message2"></div>
+          <textarea name="message" placeholder="message" class = "message"></textarea>
+          <button type="submit" class="btn btn-contact">submit</button>
+        </form>
+      </div>
+      <img src="img/email.jpg" alt="email" class = "fade-in">
+    </div>
+  </div>
+  <footer>
+    <div class = "container">
+      <div class="copyright">
+        <p>©2021-Daichi Toku</p>
+      </div>
+      <img src="img/go-top.png" alt="go-top">
+    </div>
+  </footer>
+</body>
+</html>
